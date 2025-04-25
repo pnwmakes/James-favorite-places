@@ -8,5 +8,52 @@
 
 .nav-item.active .nav-link {
     font-weight: bold;
-    color: #28a745; /* Bootstrap success green */
+    color: #28a745;
+}
+
+/* Carousel Caption Styling */
+.carousel-caption {
+    max-width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Carousel Image Styling */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Carousel Container Styling */
+#placesCarousel {
+    margin: 20px auto;
+    width: 90%;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎯 NEW: Carousel Button Styling */
+.carousel-caption .btn {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+/* Base button styling */
+.carousel-caption .btn {
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/* 🎯 Media Query for Extra Small Screens */
+@media (max-width: 400px) {
+    .carousel-caption .btn {
+        padding: 3px 8px;
+        font-size: 0.7rem;
+    }
 }
