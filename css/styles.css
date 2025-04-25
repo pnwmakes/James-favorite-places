@@ -1,0 +1,12 @@
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar .btn-success {
+    margin-left: 15px;
+}
+
+.nav-item.active .nav-link {
+    font-weight: bold;
+    color: #28a745; /* Bootstrap success green */
+}
