@@ -1,3 +1,7 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
 .navbar-brand {
     font-weight: bold;
 }
@@ -49,6 +53,13 @@
     font-size: 0.8rem;
     border-radius: 5px;
 }
+.btn-success {
+    background-color: #2e7d32;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #1b5e20;
+}
 
 /* 🎯 Media Query for Extra Small Screens */
 @media (max-width: 400px) {
@@ -68,4 +79,15 @@ footer a:hover {
 
 footer {
     border-top: 1px solid #ccc;
+}
+/* Parallax Effect */
+.parallax {
+    background-image: url('../images/pnw-background.jpg'); /* Make sure to add an appropriate image */
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
