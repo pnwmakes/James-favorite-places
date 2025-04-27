@@ -140,3 +140,18 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: #1b5e20;
 }
+form {
+    background: #e8f5e9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    border-radius: 5px;
+}
+
+form button {
+    border-radius: 20px;
+}

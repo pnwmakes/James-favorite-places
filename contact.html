@@ -3,33 +3,41 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>James' Favorite Places</title>
+        <title>Contact | James' Favorite Places</title>
+
+        <!-- Google Fonts -->
         <link
             href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
             rel="stylesheet"
         />
 
+        <!-- Bootstrap CSS -->
         <link
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
             rel="stylesheet"
         />
 
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        />
+
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="css/styles.css" />
 
-        <link rel="icon" href="images/compass.png" type="image/x-icon" />
+        <!-- Favicon -->
+        <link rel="icon" href="images/compass.png" type="image/png" />
     </head>
     <body>
-        <nav
-            class="navbar navbar-expand-lg navbar-light"
-            style="background-color: #e8f5e9"
-        >
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: #e8f5e9">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img
                         src="images/logo.png"
                         width="30"
                         height="30"
-                        class="d-inline-block align-top"
                         alt="Logo"
                     />
                     James' Favorite Places
@@ -39,19 +47,15 @@
                     type="button"
                     data-toggle="collapse"
                     data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
                 >
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div
                     class="collapse navbar-collapse bg-light p-3 rounded"
                     id="navbarNav"
                 >
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
@@ -59,7 +63,7 @@
                                 >Places to Visit</a
                             >
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="contact.html">Contact</a>
                         </li>
                         <li class="nav-item">
@@ -71,6 +75,68 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Contact Form Section -->
+        <main class="container my-5">
+            <h1 class="text-center mb-4">Get in Touch</h1>
+            <p class="text-center mb-5">
+                Have questions or suggestions? I'd love to hear from you!
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form name="contact" netlify>
+                        <div class="form-group">
+                            <label for="name"
+                                ><i class="fas fa-user"></i> Name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                name="name"
+                                placeholder="Your Name"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="email"
+                                ><i class="fas fa-envelope"></i> Email</label
+                            >
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                name="email"
+                                placeholder="Your Email"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="message"
+                                ><i class="fas fa-comment-dots"></i>
+                                Message</label
+                            >
+                            <textarea
+                                class="form-control"
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Your Message"
+                                required
+                            ></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-success btn-block mt-3"
+                        >
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
         <footer class="bg-light text-center text-lg-start mt-4">
             <div class="container p-3">
                 <a
@@ -88,6 +154,8 @@
                 © 2025 James' Favorite Places™. All Rights Reserved.
             </div>
         </footer>
+
+        <!-- Scripts -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
