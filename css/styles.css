@@ -15,7 +15,6 @@ body {
     color: #28a745;
 }
 
-/* Carousel Caption Styling */
 .carousel-caption {
     max-width: 75%;
     left: 50%;
@@ -25,29 +24,25 @@ body {
     padding: 10px;
 }
 
-/* Carousel Image Styling */
 .carousel-item img {
+    width: 100%;
     height: 500px;
     object-fit: cover;
 }
 
-/* Carousel Container Styling */
 #placesCarousel {
-    margin: 20px auto;
-    width: 90%;
-    border: 3px solid #ccc;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px;
+    border: none; /* Remove border */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove shadow */
 }
 
-/* 🎯 NEW: Carousel Button Styling */
 .carousel-caption .btn {
     padding: 4px 12px;
     font-size: 0.8rem;
     border-radius: 5px;
 }
-/* Base button styling */
 .carousel-caption .btn {
     padding: 4px 12px;
     font-size: 0.8rem;
@@ -60,8 +55,13 @@ body {
 .btn-success:hover {
     background-color: #1b5e20;
 }
+@media (max-width: 768px) {
+    .parallax {
+        background-attachment: scroll;
+        height: 250px;
+    }
+}
 
-/* 🎯 Media Query for Extra Small Screens */
 @media (max-width: 400px) {
     .carousel-caption .btn {
         padding: 3px 8px;
@@ -80,14 +80,25 @@ footer a:hover {
 footer {
     border-top: 1px solid #ccc;
 }
-/* Parallax Effect */
-.parallax {
-    background-image: url('../images/pnw-background.jpg'); /* Make sure to add an appropriate image */
-    height: 300px;
+/* .parallax {
+    background-image: url('../images/pnw-background.jpg');
+    height: 450px;
+    margin: 40px auto 20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+.parallax {
+    background-image: url('../images/pnw-background.jpg');
+    height: 450px;
+    margin-top: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
