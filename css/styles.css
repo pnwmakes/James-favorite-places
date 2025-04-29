@@ -1,5 +1,10 @@
 body {
     font-family: 'Quicksand', sans-serif;
+    background-image: url('../images/bg-forest-light.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 .navbar-brand {
@@ -29,16 +34,11 @@ body {
 #placesCarousel {
     width: 100%;
     margin-top: 20px;
-    border: none; /* Remove border */
-    border-radius: 0; /* Remove rounded corners */
-    box-shadow: none; /* Remove shadow */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
 }
 
-.carousel-caption .btn {
-    padding: 4px 12px;
-    font-size: 0.8rem;
-    border-radius: 5px;
-}
 .carousel-caption .btn {
     padding: 4px 12px;
     font-size: 0.8rem;
@@ -76,68 +76,7 @@ footer a:hover {
 footer {
     border-top: 1px solid #ccc;
 }
-.parallax {
-    background-image: url('../images/pnw-background.jpg');
-    height: 450px;
-    margin-top: 20px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-}
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.card .btn {
-    margin-top: 10px;
-}
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* This will center everything horizontally */
-    justify-content: space-between;
-    text-align: center;
-    height: 100%; /* Ensures full height usage */
-}
-
-.card-body .btn {
-    width: 120px;
-    margin-top: auto; /* Pushes button to the bottom if needed */
-    border-radius: 20px;
-    transition: all 0.3s ease;
-}
-
-.card-body .btn:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #1b5e20;
-}
-form {
-    background: #e8f5e9;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-form input,
-form textarea {
-    border-radius: 5px;
-}
-
-form button {
-    border-radius: 20px;
-}
 .btn-outline-primary {
     border-color: #1b5e20; /* PNW dark green */
     color: #1b5e20;
@@ -148,4 +87,72 @@ form button {
     background-color: #1b5e20;
     color: #ffffff;
     border-color: #1b5e20;
+}
+/* Make card, form, and sections float softly over the background */
+section,
+.card,
+form {
+    background-color: rgba(255, 255, 255, 0.9); /* Soft white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Fine-tune forms */
+form {
+    padding: 30px;
+}
+
+/* Card image tweaks */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* Card hover animation */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Parallax image adjustments */
+.parallax {
+    background-image: url('../images/pnw-background.jpg');
+    height: 450px;
+    margin-top: 20px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+}
+h1,
+h2,
+h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #2e7d32; /* PNW dark green */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft subtle shadow */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
