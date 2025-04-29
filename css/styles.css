@@ -76,19 +76,6 @@ footer a:hover {
 footer {
     border-top: 1px solid #ccc;
 }
-/* .parallax {
-    background-image: url('../images/pnw-background.jpg');
-    height: 450px;
-    margin: 40px auto 20px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
 .parallax {
     background-image: url('../images/pnw-background.jpg');
     height: 450px;
