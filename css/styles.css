@@ -138,3 +138,14 @@ form textarea {
 form button {
     border-radius: 20px;
 }
+.btn-outline-primary {
+    border-color: #1b5e20; /* PNW dark green */
+    color: #1b5e20;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #1b5e20;
+    color: #ffffff;
+    border-color: #1b5e20;
+}
