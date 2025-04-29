@@ -64,31 +64,45 @@ body {
         font-size: 0.7rem;
     }
 }
+footer {
+    background-image: url('../images/footer-texture.png'); /* your textured background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #1b5e20; /* dark green text */
+    padding: 30px 15px 20px 15px;
+    text-align: center;
+    border-top: 2px solid #ccc;
+}
+
 footer a {
-    color: #000;
+    color: #1b5e20;
     text-decoration: none;
+    font-weight: 500;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #388e3c; /* lighter green on hover */
 }
 
-footer {
-    border-top: 1px solid #ccc;
-}
-
-.btn-outline-primary {
-    border-color: #1b5e20; /* PNW dark green */
+footer .btn-outline-primary {
+    border-color: #1b5e20;
     color: #1b5e20;
+    background-color: transparent;
     transition: all 0.3s ease;
 }
 
-.btn-outline-primary:hover {
+footer .btn-outline-primary:hover {
     background-color: #1b5e20;
     color: #ffffff;
     border-color: #1b5e20;
 }
-/* Make card, form, and sections float softly over the background */
+footer a,
+footer .btn-outline-primary {
+    font-weight: 700; /* bolder weight */
+}
+
 section,
 .card,
 form {
