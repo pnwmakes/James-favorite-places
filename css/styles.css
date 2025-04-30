@@ -144,7 +144,7 @@ form {
 .card-body .btn {
     margin-top: auto;
     align-self: center;
-    width: 80px; /* optional: makes button widths consistent */
+    width: 80px;
 }
 
 /* Parallax image adjustments */
@@ -181,4 +181,8 @@ h2 {
 h3 {
     font-size: 1.75rem;
     margin-bottom: 0.5rem;
+}
+.navbar .nav-item.active .nav-link {
+    font-weight: bold;
+    color: #28a745 !important;
 }
