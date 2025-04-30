@@ -134,6 +134,18 @@ form {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body .btn {
+    margin-top: auto;
+    align-self: center;
+    width: 80px; /* optional: makes button widths consistent */
+}
 
 /* Parallax image adjustments */
 .parallax {

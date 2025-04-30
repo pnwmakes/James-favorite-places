@@ -59,150 +59,156 @@
     </head>
 
     <body>
-        <!-- Navbar -->
-        <nav
-            class="navbar navbar-expand-lg navbar-light"
-            style="background-color: #e8f5e9"
-        >
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img
-                        src="images/logo.png"
-                        width="30"
-                        height="30"
-                        class="d-inline-block align-top"
-                        alt="Logo"
-                    />
-                    James' Favorite Places
-                </a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+        <div class="d-flex flex-column min-vh-100">
+            <!-- Navbar -->
+            <nav
+                class="navbar navbar-expand-lg navbar-light"
+                style="background-color: #e8f5e9"
+            >
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img
+                            src="images/logo.png"
+                            width="30"
+                            height="30"
+                            class="d-inline-block align-top"
+                            alt="Logo"
+                        />
+                        James' Favorite Places
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div
-                    class="collapse navbar-collapse bg-light p-3 rounded"
-                    id="navbarNav"
-                >
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="places.html"
-                                >Places to Visit</a
-                            >
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+                    <div
+                        class="collapse navbar-collapse bg-light p-3 rounded"
+                        id="navbarNav"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="places.html"
+                                    >Places to Visit</a
+                                >
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="contact.html"
+                                    >Contact</a
+                                >
+                            </li>
 
-                        <li class="nav-item">
-                            <a
-                                class="btn btn-success ms-3"
-                                href="https://buy.stripe.com/9AQaFT5JPdQV448cMM"
-                                target="_blank"
-                            >
-                                Donate
-                            </a>
-                        </li>
-                    </ul>
+                            <li class="nav-item">
+                                <a
+                                    class="btn btn-success ms-3"
+                                    href="https://buy.stripe.com/9AQaFT5JPdQV448cMM"
+                                    target="_blank"
+                                >
+                                    Donate
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- Contact Form Section -->
-        <main class="container my-5">
-            <h1 class="text-center mb-4">Get in Touch</h1>
-            <p class="text-center mb-5">
-                Have questions or suggestions? I'd love to hear from you!
-            </p>
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <div class="form-group">
-                            <label for="name"
-                                ><i class="fas fa-user"></i> Name</label
+            <!-- Contact Form Section -->
+            <main class="container my-5">
+                <h1 class="text-center mb-4">Get in Touch</h1>
+                <p class="text-center mb-5">
+                    Have questions or suggestions? I'd love to hear from you!
+                </p>
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <form name="contact" method="POST" data-netlify="true">
+                            <div class="form-group">
+                                <label for="name"
+                                    ><i class="fas fa-user"></i> Name</label
+                                >
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="email"
+                                    ><i class="fas fa-envelope"></i>
+                                    Email</label
+                                >
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="message"
+                                    ><i class="fas fa-comment-dots"></i>
+                                    Message</label
+                                >
+                                <textarea
+                                    class="form-control"
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    placeholder="Your Message"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button
+                                type="submit"
+                                class="btn btn-success btn-block mt-3"
                             >
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="name"
-                                name="name"
-                                placeholder="Your Name"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="email"
-                                ><i class="fas fa-envelope"></i> Email</label
-                            >
-                            <input
-                                type="email"
-                                class="form-control"
-                                id="email"
-                                name="email"
-                                placeholder="Your Email"
-                                required
-                            />
-                        </div>
-                        <div class="form-group">
-                            <label for="message"
-                                ><i class="fas fa-comment-dots"></i>
-                                Message</label
-                            >
-                            <textarea
-                                class="form-control"
-                                id="message"
-                                name="message"
-                                rows="5"
-                                placeholder="Your Message"
-                                required
-                            ></textarea>
-                        </div>
-                        <button
-                            type="submit"
-                            class="btn btn-success btn-block mt-3"
-                        >
-                            Send Message
-                        </button>
-                    </form>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
 
-        <!-- Footer -->
-        <footer class="text-center py-4 mt-5">
-            <div class="container">
-                <a
-                    href="https://www.linkedin.com/in/jamesmelzark"
-                    target="_blank"
-                    class="btn btn-outline-primary mb-2"
-                >
-                    Connect on LinkedIn
-                </a>
-                <br />
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:pnwmakes@gmail.com" class="d-block mb-3"
-                    >pnwmakes@gmail.com</a
-                >
-            </div>
-            <div class="py-2">
-                <small
-                    >© 2025 James' Favorite Places™. All Rights Reserved.</small
-                >
-            </div>
-        </footer>
+            <!-- Footer -->
+            <footer class="mt-auto bg-light text-center py-4">
+                <div class="container">
+                    <a
+                        href="https://www.linkedin.com/in/jamesmelzark"
+                        target="_blank"
+                        class="btn btn-outline-primary mb-2"
+                    >
+                        Connect on LinkedIn
+                    </a>
+                    <br />
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:pnwmakes@gmail.com" class="d-block mb-3"
+                        >pnwmakes@gmail.com</a
+                    >
+                </div>
+                <div class="py-2">
+                    <small
+                        >© 2025 James' Favorite Places™. All Rights
+                        Reserved.</small
+                    >
+                </div>
+            </footer>
 
-        <!-- Scripts -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Scripts -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+        </div>
     </body>
 </html>
