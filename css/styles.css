@@ -137,14 +137,16 @@ form {
 .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: flex-start;
 }
 
 .card-body .btn {
     margin-top: auto;
     align-self: center;
     width: 80px;
+}
+.card-text {
+    margin-bottom: 1rem;
 }
 
 /* Parallax image adjustments */
